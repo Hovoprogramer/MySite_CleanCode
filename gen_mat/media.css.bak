@@ -1,0 +1,16 @@
+@media screen and (max-width: 500px){
+	.foot-menu,.contacts{
+		font-size: .875rem;
+	}
+	.copyright{
+		top:110%;
+		left:0;
+	}
+	.soc{
+		top:10rem;
+		left:2.5rem;
+	}
+	.contacts object{
+		display: none;
+	}
+}

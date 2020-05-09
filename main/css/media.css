@@ -1,0 +1,61 @@
+@media screen and (max-width: 991px){
+	.navbar{
+		position: static;
+	}
+	.carousel-caption{
+		top:11rem;
+		right:20rem;
+		animation:none;
+	}
+	.about{
+		padding: 2% 0;
+	}
+	.about img{
+		width:400px;
+		border-width: 1.5rem;
+	}
+	.about p{
+		font-size: 1rem;
+	}
+	.services{
+		padding: 2% 0;
+	}
+	.services-border{
+		border-width: 1rem;
+	}
+	.services article{
+		border-right: none;
+	}
+}
+@media screen and (max-width: 767px){
+	.about{
+		padding: 1% 0;
+	}
+	.about img{
+		width:400px;
+		border-width: 1rem;
+	}
+	.services{
+		padding: 0;
+	}
+	.services-border{
+		border:none;
+	}
+	.services article {
+		width: 115px;height: 115px;
+	}
+	.services article a {
+		letter-spacing: 0;
+		line-height: 1;
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 767px){
+	.services-border{
+		display: block;
+		width: 100%;
+	}
+	.services article {
+		width: 100%;
+	}
+}

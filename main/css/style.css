@@ -1,0 +1,243 @@
+/*---main styles*/
+*{
+	margin:0;padding:0;
+	box-sizing: border-box;
+}
+/*-----------------------------------------------------------*/
+/*-------HEADER----NAVBAR--*/
+.navbar{
+	padding: 0;
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+}
+.navbar.bg-light{
+	background: rgba(255,255,255,.4) !important;
+}
+.navbar.default{
+	position: fixed;
+	background: white !important;
+	width: 100%;
+	box-shadow: 0px 3px 24px #9dc91a;
+	transition: 1s;
+}
+.logo-title{
+	margin:.5rem 0 0 .25rem; 
+	color: #9DC91A;
+}
+.logo-title h1{
+	line-height: 1;
+	margin:0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 2rem;
+}
+.logo-title h6{
+	line-height: 1;
+	margin:0;
+	font-size: .75rem;
+}
+.nav-link.nav-active{
+	border-bottom:5px solid #9DC91A !important;
+}
+.nav-item a{
+	color: #9DC91A !important;
+	font-size: 1.125rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	border-bottom:5px solid transparent;
+	transition: .3s;
+}
+.navbar .dropdown-menu{
+	min-width: 11rem;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	border-bottom:5px solid #9DC91A;
+	transition: .3s;
+}
+.dropdown-item.active, .dropdown-item:active{
+	background-color: #f8f9fa;
+}
+.navbar-nav .dropdown img{
+	width: 27px;
+	margin-right: 5px;
+}
+/*------slider--------------*/
+.carousel-caption{
+	position: absolute;
+	top:17rem;
+	right: 50rem;
+	-webkit-animation: down 2s ease 0s;
+	-o-animation: down 2s ease 0s;
+	animation: down 2s ease 0s;
+}
+/*---------------------------------------------------*/
+section h3 {
+	position: relative;
+	overflow: hidden;
+	font-weight: normal;
+	text-align: center;
+	color: #9dc91a;
+	font-size: 1.5rem;
+}
+section h3 > span {
+	display: inline-block;
+	margin: 0 .4em;
+}
+section h3 > span:before,
+section h3 > span:after {
+	content: '';
+	position: absolute;
+	width: 10%;
+	border-top: 2px solid #9dc91a;
+	margin-top: .6em;
+}
+section h3 > span:before {
+	margin-left: -12%;
+}
+section h3 > span:after {
+	margin-left: 2%;
+}
+/*----------------------------------------------------*/
+/*--------ABOUT-------*/
+.about{
+	text-align:center;
+}
+.heading{
+	padding:3% 0; 
+}
+.about{
+	background-color: rgba(176,221,41,.48);
+	padding: 7% 0;
+}
+.about img{
+	border:2.625rem solid #9dc91a;
+	margin-bottom:1%;
+}
+.about p{
+	color: #9dc91a;
+	font-size: 1.25rem;
+	margin-bottom: 0;
+	text-align:justify;
+}
+/*--------SERVICES--------*/
+.services{
+	background-color: #9dc91a;
+	padding:7% 0;
+	display: flex;
+	justify-content: center;
+}
+.services-border{
+	border:2rem solid #fff;
+	display: flex;
+}
+.services article{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: .6rem;
+	padding-left: .6rem;
+	border-right: 2rem solid #fff;
+	width: 177px;
+	height: 177px;
+	box-sizing: unset;
+	font-size: 1.125rem;
+}
+.services article a{
+	text-align:center;
+	letter-spacing: 2px;
+	line-height: 2;
+	color: #fff;
+}
+.services article:nth-child(1), .services article:nth-child(3){
+	background-color: #b8d85a;
+}
+.services article:nth-child(2), .services article:nth-child(4){
+	background-color: rgba(176,221,41,.28);
+}
+.services article:nth-child(4){
+	border-right: none;
+}
+/*------------------------FOOTER--------------*/
+footer{
+	padding:7% 0 4% 0;
+	position: relative;
+}
+footer ul{
+	list-style: none;
+}
+.foot-menu ul a{
+	color: #719111;
+	text-decoration:underline;
+}
+.foot-menu ul a:hover{
+	text-decoration:none;
+}
+.contacts{
+	color: #719111;
+	position: relative;
+}
+object{
+	margin-right: 1rem;
+	margin-bottom: -.5rem;
+}
+.contacts p{
+	margin-bottom: 2rem;
+}
+.contacts ul{
+	position: absolute;
+	left:2.75rem;
+	top:3.875rem;
+}
+.soc{
+	position: absolute;
+	top:11rem;
+	left:0px;
+}
+.fa {
+	padding: .5rem;
+	font-size: 1rem;
+	width: 2rem;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+.fa:hover {
+	opacity: 0.7;
+	color: white;
+	text-decoration: none;
+}
+.instagram{
+	width: 2rem;
+	margin-top: -2px;
+	border-radius: 50%;
+}
+.instagram:hover {
+	opacity: 0.7;
+	color: white;
+	text-decoration: none;
+}
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+.copyright{
+	position: absolute;
+	left:13.5%;
+	top:85%;
+}
+.copyright p{
+	font-size: .625rem;
+	margin-bottom: 0;
+	color:#719111;
+}
+
+
+@keyframes down{
+	0%{
+		top:-1rem;
+	}
+	100%{top:17rem;}
+}
